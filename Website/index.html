@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockFood DAO | Das Protokoll des Überflusses</title>
+    <meta name="description" content="Die autonome Lebensmittel-Lieferkette auf Polygon.">
+   
+   <style>
+    /* CI-Farben */
+    :root {
+        --bg-dark: #0a192f;
+        --bg-card: rgba(17, 34, 64, 0.7);
+        --text-primary: #e6f1ff;
+        --text-secondary: #8892b0;
+        --accent-cyan: #00f3ff;
+        --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+        background-color: var(--bg-dark); /* Die Hauptfarbe */
+        color: var(--text-primary);
+        font-family: var(--font-main);
+        line-height: 1.6;
+        overflow-x: hidden;
+        font-size: 16px;
+        /* Wir entfernen den komplexen Verlauf, da er Fehler verursacht hat */
+        min-height: 100vh;
+    }
+   
+    /* Der gesamte REST des CSS (ab body::before) muss hier eingefügt werden. */
+    /* Du kannst den REST des CSS, den du zuletzt eingegeben hast, HIER HINTEN WIEDER EINFÜGEN! */
+</style>
+
+
+</head>
+<body>
+
+    <header class="container">
+        <div class="logo-container fade-in">
+            <img
+                class="logo-svg"
+                src="assets/icon.svg"
+                alt="BlockFood DAO Logo"
+                width="80" height="80"
+                style="filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.5));"
+            />
+        </div>
+
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">BlockFood: <br><span class="gradient-text">Das Protokoll des Überflusses.</span></h1>
+            <h2 class="hero-subtitle">Die autonome Lebensmittel-Lieferkette auf Polygon. <br>Dezentral. Effizient. Fair.</h2>
+            <a href="https://discord.gg/C87EWpStbY" class="btn btn-primary">
+                Join the DAO (Discord)
+                <svg style="margin-left:8px; width:16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="grid-2">
+            <div class="glass-card fade-in">
+                <span class="problem-mark">⚠ Der Fehler im System</span>
+                <h3>Mittelalterliche Verwaltung</h3>
+                <p>Die heutige Lebensmittelversorgung wird zentral gesteuert. Konzerne entscheiden, was wir essen.</p>
+                <p>Das Ergebnis: <strong>30% aller Lebensmittel verrotten</strong>, während die Preise künstlich steigen. Eine Ineffizienz, die wir uns nicht mehr leisten können.</p>
+            </div>
+           
+            <div class="glass-card fade-in" style="border-color: rgba(0, 243, 255, 0.3);">
+                <span class="solution-mark">❖ Die Vision</span>
+                <h3>Das autonome Netzwerk</h3>
+                <p>Wir bauen das Betriebssystem für eine neue Art der Versorgung. Ohne Manager. Ohne Mittelsmann.</p>
+                <p>Angebot und Nachfrage werden durch <strong>Smart Contracts</strong> in Echtzeit gematcht. Code is Law.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="modules">
+        <div style="text-align: center; margin-bottom: 3rem;" class="fade-in">
+            <h2>Das Produkt: Ein Ökosystem, <span class="gradient-text">drei Module</span></h2>
+        </div>
+
+        <div class="mockup-container fade-in">
+            <img
+                src="assets/mockup.png"
+                alt="BlockFood App Screens: FoodGrid, Relay, Wallet"
+                style="max-width: 100%; height: auto; border-radius: 12px; z-index: 1; filter: drop-shadow(0 0 20px rgba(0, 243, 255, 0.2));"
+            >
+        </div>
+
+        <div class="module-grid">
+            <div class="module-card fade-in">
+                <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.74 5.88a1 1 0 0 1 .23.95l-1.63 6.08a1 1 0 0 1-.97.74H8.63a1 1 0 0 1-.97-.74l-1.63-6.08a1 1 0 0 1 .23-.95L12 2.69z"/><path d="M12 22v-8"/></svg>
+                <span class="module-subtitle">Grower-Modul</span>
+                <h3 class="module-title">FoodGrid</h3>
+                <p>Jeder Bürger wird zum Erzeuger. Fotografiere deine Ernte – der Smart Contract "minted" sie als digitales Asset.</p>
+            </div>
+
+            <div class="module-card fade-in">
+                <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+                <span class="module-subtitle">Logistik-Modul</span>
+                <h3 class="module-title">Relay</h3>
+                <p>Dezentrale Kuriere schließen die letzte Meile. Automatisches Matching von freien Kapazitäten mit offenen Lieferungen.</p>
+            </div>
+
+            <div class="module-card fade-in">
+                <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                <span class="module-subtitle">Mobilitäts-Modul</span>
+                <h3 class="module-title">OpenSeat</h3>
+                <p>Private Pendler nutzen Leerkapazitäten. Transport von Gütern auf Routen, die ohnehin gefahren werden.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="grid-2">
+            <div class="fade-in">
+                <h2 style="font-size: 2.5rem;">Vertrauen durch <span class="gradient-text">Code</span>.</h2>
+                <p>Keine Versprechen. Nur Mathematik. Unsere Smart Contracts sind open-source und jederzeit überprüfbar.</p>
+            </div>
+           
+            <div class="trust-grid fade-in">
+                <div class="trust-item">
+                    <strong>Tokenomics</strong>
+                    <p style="margin:0; font-size: 0.95rem;">80% der 10.000.000 $FOOD liegen im Community Treasury.</p>
+                </div>
+                <div class="trust-item">
+                    <strong>Verifizierung</strong>
+                    <p style="margin:0; font-size: 0.95rem;">Verifizierter Contract auf <a href="0xC5e037851dFDa9B26688F7a5BB0567b5c2B68463" style="text-decoration: underline; color: white;">PolygonScan</a>.</p>
+                </div>
+                <div class="trust-item">
+                    <strong>Double Handshake</strong>
+                    <p style="margin:0; font-size: 0.95rem;">Kryptographisch gesicherte Übergabe via QR & GPS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-cta">
+                <a href="mailto:blockfood2025@gmail.com" class="btn" style="border-color: var(--text-secondary); color: var(--text-primary);">
+                    blockfood2025@gmail.com
+                </a>
+            </div>
+            <div style="margin-bottom: 2rem;">
+                <a href="Assets\BlockFood-White Paper v.2.pdf" class="footer-link">Whitepaper (PDF)</a>
+                <a href="https://x.com/BLOCKFOOD2025" class="footer-link">Twitter / X</a>
+                <a href="https://discord.gg/C87EWpStbY" class="footer-link">Discord</a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2025 BlockFood DAO. Built for the future.</p>
+        </div>
+    </footer>
+
+    <script>
+        // High-Performance Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            document.querySelectorAll('.fade-in').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+
